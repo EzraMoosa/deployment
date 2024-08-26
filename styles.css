@@ -1,0 +1,239 @@
+/*Reference:* 2*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand img {
+    margin: 4px;
+    width: 150px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 40px;
+    color: #faa019ff;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: green;
+}
+
+.search {
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    border: 3px solid green;
+    margin-right: -35px;
+}
+
+.btn0 {
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background-color: #f04b37ff;
+    color: #fff;
+    border-radius: 60px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.btn0:hover {
+    background-color: green;
+}
+
+.main {
+    background: url(./img/hero-fruit.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+}
+
+.main h1 {
+    display: inline-flex;
+    font-size: 48px;
+    font-weight: 700;
+    margin-right: 50%;
+    color: green;
+}
+
+.main p {
+    text-align: center;
+    font-size: 22px;
+    margin-right: 50%;
+    margin-top: 3%;
+    color: #f04b37ff;   
+}
+
+.product {
+    padding: 0 20px;
+}
+
+.product .card-body {
+    transition: 0.5s;
+}
+
+.product .card-body:hover {
+    border: 2px solid green;
+    transform: translateY(-8px);
+}
+
+.product h1 {
+    font-weight: 600;
+    color: green;
+    text-decoration: underline;
+}
+
+.product h6 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #f04b37ff;
+}
+
+.product img {
+    border-radius: 8px;
+    padding: 0px;
+}
+
+.product button {
+    transition: 0.3s;
+}
+
+.product button:hover {
+    background-color: #fff;
+    color: green;
+}
+
+.card-body img {
+    width: 200px;
+    height: 100%;
+}
+
+.form-group input::placeholder {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.form-horizontal {
+    margin: 0 60px;
+}
+
+.form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form h1 {
+    font-weight: 600;
+    color: green;
+    text-decoration: underline;
+    margin-top: 40px;
+}
+
+
+.form label {
+    color: green;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.form img {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"] {
+    flex: 1;
+    border: 2px solid #f04b37ff;
+    margin: 10px;
+    width: 90%;
+}
+
+.form button {
+    min-width: 80px;
+    margin-left: 25px;
+    margin-top: 25px;
+    transition: 0.2s;
+}
+
+.form button:hover {
+    background-color: #fff;
+    border: 2px solid green;
+    color: green
+}
+
+/*Reference:* 1*/
+@media (max-width: 768px) {
+
+    .nav-link {
+        margin: 0 10px;
+    }
+
+    .search {
+        margin-bottom: 20px;
+    }
+
+    .main {
+        background-color: #fff;
+    }
+
+    .main h1{
+        font-size: 3rem;
+        margin-left: 10px;
+    }
+
+    .main p {
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+
+    .btn1 {
+        font-size: 0.6rem;
+    }
+
+    .product .card-body {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .form-horizontal{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .form p {
+        padding: 0 20px;
+    }
+
+    .form input {
+        width: 90%;
+    }
+}
+
+/* References & Resources:
+1. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+2. https://fonts.google.com
+*/
